@@ -40,11 +40,27 @@
         </div>
         <main>
             <section id="BANNER">
-                <h1>Banner</h1>
+                <div id="BANNER_CONTATINER">
+                    <img class="BOUNCE_TOP" id="HERO_IMAGE" src="resources/Logo With Transparent Background.png" />
+                </div>    
             </section>
 
             <section id="ABOUT_US">
                 <h2>About Us</h2>
+                <article id="ABOUT_US_ARTICLE">
+                    <div id="ABOUT_US_IMAGE">
+                        <img src="resources/About Us Photo.png" />
+                    </div>
+                    <div id="ABOUT_US_PARAGRAPH">
+                        <p>Established in 2018 our team has completed over 2000+
+                            houses in commercial and residential. Based out of Calgary
+                            we service the surrounding area from Okotoks, to Canmore.
+                            With over 8 fantastic employees we ensure your job is 
+                            done to the highest standard of quality and in a 
+                            timeley matter. <a href="###-###-####">Call</a> us now for a free estimate!
+                        </p>
+                    </div>
+                </article>
             </section>
 
             <section id="SERVICES">
@@ -57,10 +73,24 @@
 
             <section id="LOCATION">
                 <h2>Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d321199.82054421236!2d-114.36801501785287!3d51.02772023487454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537170039f843fd5%3A0x266d3bb1b652b63a!2sCalgary%2C%20AB!5e0!3m2!1sen!2sca!4v1645392078830!5m2!1sen!2sca" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </section>
 
-            <section id="CONTACT US">
+            <section id="CONTACT_US">
                 <h2>Contact Us</h2>
+                <form id="CONTACT_US_FORM" method="POST" action="">
+                    <label for="NAME" class="LABEL">Name:</label>
+                    <input type="text" id="NAME" name="NAME" required minlength="4" maxlength="50" placeholder="First and Last Name">
+                    <label for="EMAIL" class="LABEL">Email:</label>
+                    <input type="email" id="EMAIL" size="30" required placeholder="email@email.com">
+                    <label for="PHONE" class="LABEL">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="000-000-0000">
+                    <small>Format: 123-456-7890</small>
+                    <label for="DESCRIPTION" class="LABEL">Add a description of your job:</label>
+                    <textarea id="DESCRIPTION" name="DESCRIPTION" cols="25" rows="15" placeholder="Please enter a description of your job so we can give you an accurate quote."></textarea>
+                    <br>
+                    <input type="submit" id="SUBMIT">
+                </form>
             </section>
 
         </main>

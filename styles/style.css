@@ -2,12 +2,15 @@ html {
     height: 100%;
     font-size: 16px;
 }
+
+/* Navigation */
+
 header {
-    width: 100vw;
+    width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-between;
-    background-color: #a5a5a5;
+    background-color: #8A8D90;
     border-bottom: 1px solid black;
 }
 
@@ -33,6 +36,18 @@ nav ul li {
     font-size: 1.5rem;
 }
 
+nav a {
+    color: white;
+    font-style: underline;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* Mobile and Tablet Navigation */
+
 #HAMBURGER_MENU {
     display: none;
 }
@@ -55,14 +70,16 @@ nav ul li {
 
 #HIDDEN_NAV p {
     float: right;
-    color: white;
-    border: 1px solid black;
     margin: 5px 5px;
     font-size: 1.5rem;
+    background-color: #36454F;
+    color: white;
+    padding: 5px
 }
 
 #HIDDEN_NAV p:hover {
-    color: red;
+    color: black;
+    background-color: #717171
 }
 
 #HIDDEN_NAV li {
@@ -112,4 +129,145 @@ nav ul li {
         background-color: #717171;
     }
 
+}
+
+/* Banner */
+
+#BANNER {
+    width: 100%;
+    height: 85vh;
+    background-color: #E9E9E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BOUNCE_TOP {
+    animation:BOUNCE_TOP 1s cubic-bezier(.215,.61,.355,1.000) both;
+}
+
+@keyframes BOUNCE_TOP {
+    0% {
+        transform:translateY(-45px);
+        animation-timing-function:ease-in;opacity:1
+    } 
+    24% {
+        opacity:1
+    }
+    40% {
+        transform:translateY(-24px);
+        animation-timing-function:ease-in
+    }
+    65% {
+        transform:translateY(-12px);
+        animation-timing-function:ease-in
+    }
+    82% {
+        transform:translateY(-6px);
+        animation-timing-function:ease-in
+    } 
+    93% {
+        transform:translateY(-4px);
+        animation-timing-function:ease-in
+    }
+    25%,55%,75%,87% {
+        transform:translateY(0);
+        animation-timing-function:ease-out
+    }
+    100% {
+        transform:translateY(0);
+        animation-timing-function:ease-out;opacity:1
+    }
+}
+
+/* About Us */
+
+#ABOUT_US {
+    width: 100%;
+    height: 100%;
+    background-color: #525D65;
+}
+
+#ABOUT_US h2 {
+    padding: 25px 0;
+    font-size: 3rem;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+#ABOUT_US_IMAGE {
+    width: 50vw;
+    margin: 0 0 25px 25px;
+}
+
+#ABOUT_US img {
+    width: 100%;
+    border-radius: 50%
+}
+
+#ABOUT_US_ARTICLE {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+#ABOUT_US a {
+    color: blue;
+    font-style: underline;
+}
+
+#ABOUT_US a:hover {
+    color: red;
+    font-style: none;
+}
+
+#ABOUT_US_PARAGRAPH {
+    width: 60%;
+    margin: 0 20px;
+    align-self: center;
+}
+
+/* Services */
+
+#SERVICES {
+    width: 100%;
+    height: 50vh;
+    background-color: #E9E9E9;
+}
+
+/* Gallery */
+
+#GALLERY {
+    width: 100%;
+    height: 50vh;
+    background-color: #6E757A;
+}
+
+/* Location */
+
+#LOCATION {
+    width: 100%;
+    height: 100%;
+    background-color: #C7C7C7;
+}
+
+/* Contact Us */
+
+#CONTACT_US {
+    width: 100%;
+    height: 50vh;
+    background-color: #525D65;
+    display: flex;
+    justify-content: center;
+}
+
+#CONTACT_US form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
