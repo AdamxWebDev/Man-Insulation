@@ -43,6 +43,7 @@ nav ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-right: 2rem;
 }
 
 nav ul li {
@@ -51,12 +52,13 @@ nav ul li {
 
 nav a {
     color: white;
-    font-style: underline;
+    text-decoration: underline;
     font-weight: 600;
 }
 
 nav a:hover {
-    color: red;
+    color: rgb(5, 94, 17);
+    text-decoration: none;
 }
 
 /* Mobile and Tablet Navigation */
@@ -102,12 +104,12 @@ nav a:hover {
     font-size: 1.5rem;
     color: white;
     font-weight: 600;
-    font-style: underline;
+    text-decoration: underline;
 }
 
 #HIDDEN_NAV a:hover {
-    color: red;
-    font-style: none;
+    color: rgb(11, 158, 30);
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -236,13 +238,13 @@ nav a:hover {
 }
 
 #ABOUT_US a {
-    color: blue;
-    font-style: underline;
+    color: rgb(50, 167, 245);
+    text-decoration: underline;
 }
 
 #ABOUT_US a:hover {
-    color: red;
-    font-style: none;
+    color: rgb(5, 94, 17);
+    text-decoration: none;
 }
 
 #ABOUT_US_PARAGRAPH {
@@ -308,7 +310,7 @@ nav a:hover {
 
 #GALLERY {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-color: #6E757A;
     text-align: center;
 }
@@ -322,20 +324,22 @@ nav a:hover {
     height: 50vh;
     width: 100%;
   }
+
   .slideshow-container {
-    max-width: 1000px;
+    max-width: 50%;
     position: relative;
     margin: auto;
   }
+
   /* Next & previous buttons */
+
   .prev,
   .next {
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
     padding: 16px;
-    margin-top: -22px;
+    position: relative;
+    top: 1.5rem;
+    margin-top: 2rem;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -343,27 +347,36 @@ nav a:hover {
     border-radius: 0 3px 3px 0;
     user-select: none;
   }
+
   /* Position the "next button" to the right */
+
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
+
   /* On hover, add a black background color with a little bit see-through */
+
   .prev:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
+
   /* Caption text */
+
   .text {
     color: #ffffff;
     font-size: 15px;
-    padding: 8px 12px;
+    padding: 8px 0;
     position: absolute;
     bottom: 8px;
     width: 100%;
     text-align: center;
+    background-color:rgba(0, 0, 0, 0.8);
   }
+
   /* Number text (1/3 etc) */
+
   .numbertext {
     color: #ffffff;
     font-size: 12px;
@@ -371,28 +384,34 @@ nav a:hover {
     position: absolute;
     top: 0;
   }
+
   /* The dots/bullets/indicators */
+
   .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin: 1.75rem 2px;
     background-color: #999999;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
   }
+
   .active,
   .dot:hover {
     background-color: #111111;
   }
+
   /* Fading animation */
+
   .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
   }
+
   @-webkit-keyframes fade {
     from {
       opacity: .4
@@ -401,6 +420,7 @@ nav a:hover {
       opacity: 1
     }
   }
+
   @keyframes fade {
     from {
       opacity: .4
@@ -457,7 +477,7 @@ nav a:hover {
 
 #CONTACT_US {
     width: 100%;
-    height: 60vh;
+    height: 65vh;
     background-color: #525D65;
     text-align: center;
     color: white;
@@ -473,6 +493,14 @@ nav a:hover {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+}
+
+#CONTACT_US label {
+    margin-top: 1rem;
+}
+
+small {
+    font-size: .75rem;
 }
 
 #SUBMIT {
@@ -492,6 +520,15 @@ footer {
 footer div {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding: 1rem 2rem;
+}
+
+.FIRST {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+footer span {
+    font-weight: 600;
 }
