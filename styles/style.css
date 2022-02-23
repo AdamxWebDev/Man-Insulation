@@ -3,6 +3,19 @@ html {
     font-size: 16px;
 }
 
+h2 {
+    font-size: 3rem;
+    color: white;
+    font-weight: 600;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
 /* Navigation */
 
 header {
@@ -136,7 +149,16 @@ nav a:hover {
 #BANNER {
     width: 100%;
     height: 85vh;
-    background-color: #E9E9E9;
+    background-image: url("../resources/copperfield.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#BANNER_CONTAINER {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,15 +211,13 @@ nav a:hover {
 }
 
 #ABOUT_US h2 {
-    padding: 25px 0;
-    font-size: 3rem;
-    color: white;
-    font-weight: 600;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
 #ABOUT_US_IMAGE {
-    width: 50vw;
+    width: 30vw;
     margin: 0 0 25px 25px;
 }
 
@@ -235,16 +255,62 @@ nav a:hover {
 
 #SERVICES {
     width: 100%;
-    height: 50vh;
+    height: 100%;
     background-color: #E9E9E9;
+    display: grid;
+    grid-template: .5fr 1fr 3fr 1fr / 1fr 1fr 1fr 1fr;
+    column-gap: .5rem;
+    row-gap: 2rem;
+}
+
+#SERVICES h2 {
+    color: black;
+    grid-area: 1 / 2 / 1 / 4;
+    text-align: center;
+}
+
+#RESIDENTIAL {
+    grid-area: 2 / 1 / 5 / 1;
+}
+
+#COMMERCIAL {
+    grid-area: 2 / 2 / 5 / 2;
+}
+
+#BATTING {
+    grid-area: 2 / 3 / 5 / 3;
+}
+
+#POLY {
+    grid-area: 2 / 4 / 5 / 4;
+}
+
+.SERVICE {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SERVICE h3 {
+    margin-bottom: 1rem;
+}
+
+.SERVICE img {
+    width: 80%;
+}
+
+.SERVICE p {
+    margin: 1rem 0;
 }
 
 /* Gallery */
 
 #GALLERY {
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     background-color: #6E757A;
+    text-align: center;
 }
 
 .mySlides {
@@ -348,27 +414,84 @@ nav a:hover {
 
 #LOCATION {
     width: 100%;
+    height: 100vh;
+    background-image: url("../resources/calgary.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+#OVERLAY {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
     height: 100%;
-    background-color: #C7C7C7;
+}
+
+#IFRAME_CENTER {
+    width: 100%;
+    height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+}
+
+#LOCATION h2 {
+    color: white;
+    text-align: center;
+}
+
+#LOCATION h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+#LOCATION li {
+    margin-top: 1rem;
+    font-size: 1.5rem;
 }
 
 /* Contact Us */
 
 #CONTACT_US {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-color: #525D65;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#CONTACT_US h2{
+    margin: 0 0 2rem 0;
+    padding-top: 2rem;
 }
 
 #CONTACT_US form {
-    width: 80%;
+    width: 20%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+}
+
+#SUBMIT {
+    width: 20%;
+    margin: 0 auto;
+}
+
+/* Footer */
+
+footer {
+    height: 100%;
+    background-color:#C7C7C7;
+    border-top: 1px solid black;
+    
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 1rem 2rem;
 }
