@@ -300,10 +300,14 @@ nav a:hover {
 
 .SERVICE img {
     width: 80%;
+    height: 50vh;
 }
 
 .SERVICE p {
-    margin: 1rem 0;
+    margin: 2rem 0;
+    padding: 0 3rem 3rem;;
+    height: 100%;
+    font-size: 1.125rem;
 }
 
 /* Gallery */
