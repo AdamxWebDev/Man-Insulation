@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/vyxxy8g5fbrd/public_html/maninsulation.ca
+    - /bin/cp -r * $DEPLOYPATH
