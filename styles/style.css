@@ -438,7 +438,7 @@ nav a:hover {
 
 #LOCATION {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url("../resources/calgary.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -455,7 +455,7 @@ nav a:hover {
 
 #IFRAME_CENTER {
     width: 100%;
-    height: 70%;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -481,7 +481,7 @@ nav a:hover {
 
 #CONTACT_US {
     width: 100%;
-    height: 65vh;
+    height: 100%;
     background-color: #525D65;
     text-align: center;
     color: white;
